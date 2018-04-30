@@ -63,11 +63,19 @@ The following packages aren't required but are recommended:
 Now that we have installed the dependencies we can proceed to cloning from the repo and building the Coengineer software:
 
 git clone https://github.com/gdfbacchus/coe
+
 cd coe
+
 git submodule update --init --recursive
+
 mkdir build
+
 cd build
+
 cmake -DCMAKE_BUILD_TYPE=Release ..
+
 make -j$(nproc) coengineerd
+
 make -j$(nproc) cli_wallet
+
 make install
